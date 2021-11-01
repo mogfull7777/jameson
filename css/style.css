@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: inherit;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'GmarketSansLight';
+}
+
+img{vertical-align: top;}
+
+header{
+    position: fixed;
+    background-color: #0e4023;
+    height: 50px;
+    z-index: 9999;
+    width: 100%;
+}
+
+header .wrap{
+    margin: 0 auto;
+    width: 1200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .wrap h1{
+    /* background-color: aquamarine; */
+    height: 50px;
+}
+
+header .wrap h1 img{
+    height: 30px;
+    padding-top: 10px;
+}
+
+header .wrap ul{
+    display: flex;
+    line-height: 50px;
+}
+
+header .wrap ul li{
+    color: #fff;
+    font-weight: bold;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+header .wrap ul li:last-child{
+    margin-right: 0;
+}
+
+header .wrap button{
+    height: 50px;
+    width: 50px;
+}
+
+header .wrap button img{
+    height: 20px;
+}
+
+/******************************************* header */
+
+.banner{
+    padding-top: 50px;
+    position: relative;
+}
+
+.banner .wrap .main a{
+    display: block;
+    height: 500px;
+    background-image: url(../images/main_banner.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+
+.banner .wrap h2{
+    position: absolute;
+    font-size: 40px;
+    top: 60px;
+    left: 50%;
+    color:  #E5DCB1;
+    font-weight: bold;
+}
+
+.banner .wrap p{
+    position: absolute;
+    font-size: 18px;
+    top: 130px;
+    left: 50%;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.banner .wrap .line{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    border-left: 4px solid #E5DCB1;
+    height: 250px;
+}
+
+.banner .wrap .more{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    height: 40px;
+    width: 130px;
+    border: 4px solid #E5DCB1;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #E5DCB1;
+}
+
+
+.banner .wrap .more a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    line-height: 35px;
+}
+
+/********************************************* banner */
+
+.sub_banner{
+    /* margin-top: 20px; */
+    position: relative;
+}
+
+.sub_banner .wrap .sub a{
+    display: block;
+    height: 500px;
+    background-image: url(../images/sub_banner.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.sub_banner .wrap h2{
+    text-align: right;
+    position: absolute;
+    font-size: 40px;
+    top: 40px;
+    right: 20%;
+    color:  #E5DCB1;
+    font-weight: bold;
+}
+
+.sub_banner .wrap h2 span{
+    font-size: 85px;
+}
+
+.sub_banner .wrap p{
+    position: absolute;
+    text-align: right;
+    font-size: 18px;
+    top: 150px;
+    right: 20%;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.sub_banner .wrap .line{
+    position: absolute;
+    top: 220px;
+    right: 20%;
+    border-left: 4px solid #E5DCB1;
+    height: 190px;
+}
+
+.sub_banner .wrap .more{
+    position: absolute;
+    bottom: 35px;
+    right: 20%;
+    height: 40px;
+    width: 130px;
+    border: 4px solid #E5DCB1;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    color: #E5DCB1;
+}
+
+.sub_banner .wrap .more a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    line-height: 35px;
+}
+
+/* sub_banner************************************** */
+
+.shop{
+    width: 1200px;
+    margin: 20px auto 0;
+}
+
+.shop .wrap h2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop .wrap h2 p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.shop .wrap h2 span{
+    display: block;
+    border-bottom: 1px solid #000;
+    width: 90%;
+    height: 20px;
+}
+
+.shop .wrap ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop .wrap ul li{
+    /* background-color: blue; */
+    width: 18%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.shop .wrap ul li .txt{
+    margin-top: 20px;
+    
+}
+
+.shop .wrap ul li .txt p{
+    margin-top: 2px;
+    text-align: center;
+}
+
+.shop .wrap ul li p:nth-child(1){
+    font-weight: bolder; 
+    white-space: nowrap; 
+    font-size: 14px; 
+    /* background-color: red; */
+
+    text-align: center;
+}
+.shop .wrap ul li p:nth-child(2){
+    white-space: nowrap; 
+    text-align: center;
+}
+.shop .wrap ul li p:nth-child(3){
+    font-weight: bold; 
+    text-align: center;
+}
+
+/* shop */
+
+.cock{
+    background-color: #0e4023;
+}
+
+.cock > .wrap{
+    margin: 20px auto 0;
+    width: 1200px;
+    position: relative;
+}
+
+.cock > .wrap .arw div{
+    position: absolute;
+}
+
+.cock > .wrap .arw div img{
+    height: 35px;
+}
+
+.cock > .wrap .arw .prv{
+    left: -200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cock > .wrap .arw .nex{
+    right: -200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cock > .wrap > h2{
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cock > .wrap > ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cock > .wrap > ul > li{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cock > .wrap > ul > li > p{
+    padding: 10px 0 15px;
+}
+
+/* cock ******************************* */
+
+.cock > .wrap > ul > li > .recipe{
+    position: absolute;
+    display: none;
+    /* background-color: #788674; */
+    color: #333;
+}
+
+.cock > .wrap > ul > li:hover > .recipe{
+    display: block;
+}
+
+.cock > .wrap > ul > li > .recipe > .wrap{
+    position: relative;
+    width: 1200px;
+    height: 215px;
+}
+
+
+.cock > .wrap > ul > li > .recipe > .wrap > .txt{
+    position: absolute;
+    width: 600px;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.cock > .wrap > ul > li > .recipe > .wrap > .txt p{
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.cock > .wrap > ul > li > .recipe > .wrap > .buy{
+    position: absolute;
+    width: 600px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.cock > .wrap > ul > li > .recipe > .wrap > .buy p{
+    margin-top: 5px;
+}
+
+.cock > .wrap > ul > li > .recipe > .wrap > .buy img{
+    height: 100px;
+}
+
+.cock .height_st{
+    height: 215px;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+}
+
+/* cock ************************************************ */
+
+.exp .wrap{
+    width: 1200px;
+    margin: 25px auto;
+}
+
+.exp .wrap h2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.exp .wrap h2 p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.exp .wrap h2 span{
+    display: block;
+    border-bottom: 1px solid #000;
+    width: 78%;
+    height: 20px;
+}
+
+.exp .wrap ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exp .wrap ul li{
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.exp .wrap ul li a{
+    width: 100%;
+    height: 250px;
+    display: block;
+    position: relative;
+}
+
+.exp .wrap ul li:nth-child(3n){margin-right: 0;}
+
+.exp .wrap ul li p{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.exp .wrap ul li .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    transition: opacity 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-position: right 15px bottom 15px;
+}
+
+.exp .wrap ul li .cover span{
+    color: #fff;
+    font-weight: bold;
+}
+
+.exp .wrap ul li:hover .cover{
+    opacity: 1;
+}
+
+/* exp************************ */
+
+footer{
+    background-color: #0e4023;
+}
+
+footer .wrap{
+    width: 1200px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+footer .wrap h2 img{
+    height: 80px;
+    /* background-color: aqua; */
+    padding: 20px 0;
+}
+
+footer .wrap .f_txt{
+    font-size: 10px;
+    margin-left: 50px;
+}
+footer .wrap .f_txt .f_util{
+    display: flex;
+    margin-bottom: 10px;
+}
+footer .wrap .f_txt .f_util li{
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+footer .wrap .f_txt .addrass{
+    padding: 10px 0;
+    border-top: 3px solid #E5DCB1;
+    border-bottom: 3px solid #E5DCB1;
+}
+footer .wrap .f_txt .copyright{
+    padding: 10px 0 0;
+}
+
+footer .wrap .ico{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    display: flex;
+}
+
+footer .wrap .ico li{
+    margin-left: 20px;
+    font-size: 30px;
+}
